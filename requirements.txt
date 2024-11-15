@@ -4,3 +4,5 @@ pandas
 reportlab
 docxtpl
 python-docx
+requests
+pillow
