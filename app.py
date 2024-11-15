@@ -4,6 +4,10 @@ from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from datetime import datetime
 import io
+import os
+
+# Configuration du port pour Heroku
+port = int(os.environ.get("PORT", 8501))
 
 def create_word_report(image_path, title="Rapport d'analyse", author="Auteur"):
     # Création du document
@@ -72,7 +76,6 @@ def create_word_report(image_path, title="Rapport d'analyse", author="Auteur"):
     
     return doc_buffer
 
-# Interface Streamlit
 def main():
     st.title("Générateur de Rapport Word avec Images")
     
