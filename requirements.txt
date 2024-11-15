@@ -1,0 +1,6 @@
+streamlit
+numpy
+pandas
+reportlab
+docxtpl
+python-docx
